@@ -29,9 +29,17 @@ class FirstComponent extends React.Component {
       })
    };
 
+   componentDidUpdate(prevProps,prevState) {
+      console.log("Previous State: ",prevState, " Current: ",this.state);
+   }
+
+   componentDidMount (){
+    console.log("Component mounted")
+   }
 
 
   render() {
+    console.log("call render()")  
     return (
 
       <>
