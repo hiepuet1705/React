@@ -5,9 +5,9 @@ class Nav extends React.Component {
 
     render() {
         return(<div class="topnav">
-        <NavLink class="active" to="/" activeClassName='active' exact={true}    >Home</NavLink>
-        <NavLink to="/about" activeClassName='active' >About</NavLink>
-       
+        <NavLink to="/"  exact    >Home</NavLink>
+        <NavLink to="/about"  >About</NavLink>
+        <NavLink to="/user" >User</NavLink>
        
       </div>)
     }
